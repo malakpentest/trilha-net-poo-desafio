@@ -1,12 +1,16 @@
-using DesafioPOO.Models;
+﻿using DesafioPOO.Models;
 
 // TODO: Realizar os testes com as classes Nokia e Iphone
-// DONE
-class Program
-{
-    public static void Main(string[] args)
-    {
-        Nokia nk123 = new Nokia("000145", "NK123", "305460516516051651", 256);
-        nk123.InstalarAplicativo("WhatsApp");
-    }
-}
+
+Console.WriteLine("Smartphone Nokia: ");
+Nokia nokia = new Nokia("123", "1111111111", "Modelo 1", 32);
+nokia.InstalarAplicativo("Whatassp");
+nokia.Ligar();
+
+
+Console.WriteLine("\n");
+
+Console.WriteLine("Smartphone iPhone:");
+Iphone iphone = new Iphone("123", "22222222", "Modelo 2", 16);
+iphone.InstalarAplicativo("Whatassp");
+iphone.ReceberLigacao();
